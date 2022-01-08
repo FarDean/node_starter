@@ -1,5 +1,5 @@
 {
-  "name": "first-npm-publish",
+  "name": "@fardean/first-npm-publish",
   "version": "0.0.1",
   "description": "node typescript starter",
   "source": "index.ts",
