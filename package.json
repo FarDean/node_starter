@@ -15,17 +15,17 @@
   },
   "author": "fardean",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FarDean/node_starter.git"
+  },
   "devDependencies": {
-    "@babel/core": "^7.16.7",
-    "@babel/preset-env": "^7.16.7",
-    "@babel/preset-typescript": "^7.16.7",
     "@parcel/packager-ts": "^2.1.1",
     "@parcel/transformer-typescript-types": "^2.1.1",
     "@tsconfig/node16": "^1.0.2",
     "@types/jest": "^27.4.0",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
-    "babel-jest": "^27.4.6",
     "eslint-config-prettier": "^8.3.0",
     "jest": "^27.4.7",
     "parcel": "^2.1.1",
