@@ -1,0 +1,11 @@
+{
+  "name": "node_starter",
+  "version": "0.0.1",
+  "description": "node typescript starter",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "fardean",
+  "license": "MIT"
+}
