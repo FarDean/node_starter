@@ -1,7 +1,6 @@
 import { Buffer } from 'buffer';
 
-export function bufferName(name: string) {
+export function stringToBufferHex(name: string) {
   const buffer = Buffer.from(name);
   return buffer.toString('hex');
 }
-console.log(bufferName('fardean'));
