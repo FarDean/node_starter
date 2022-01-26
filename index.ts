@@ -1,6 +1,4 @@
-import { Buffer } from 'buffer';
+const body = document.getElementsByTagName('body')[0];
+document.title = 'Kos';
 
-export function stringToBufferHex(name: string) {
-  const buffer = Buffer.from(name);
-  return buffer.toString('hex');
-}
+body.innerHTML = '<h1>Hello</h1>';

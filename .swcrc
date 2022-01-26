@@ -1,0 +1,18 @@
+{
+  "env": {
+    "targets": {
+      "chrome": "79"
+    },
+    "mode": "entry",
+    "coreJs": 3
+  },
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": false,
+      "decorators": false,
+      "dynamicImport": false
+    }
+  },
+  "minify": true
+}
