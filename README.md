@@ -4,6 +4,6 @@
 
 > npx @fardean/first-npm-publish@latest
 
-> then:
+then:
 
 > npm i
