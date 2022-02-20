@@ -10,8 +10,6 @@ import {
 import path from 'path';
 import process from 'process';
 
-const writePath = path.join(process.cwd(), 'kos');
-
 async function main() {
   let loading = false;
   const onSubmit = (prompt, answer) => {
@@ -31,20 +29,23 @@ async function main() {
 
   if (response.aggreement) {
     loading = true;
-    const readPath = path.join(__dirname, 'tmpelates');
+    const readPath = path.join(process.cwd(), 'templates');
+    const writePath = path.join(process.cwd(), f);
     const dir = readdirSync(readPath, { encoding: 'utf-8' });
     for (const f of dir) {
       if (lstatSync(f).isFile()) {
-        const data = readFileSync(f, { encoding: 'utf-8' });
-        const p = path.join(writePath, f);
-        writeFileSync(p, data);
+        const tmpPath = path.join(readPath, f);
+        const data = readFileSync(tmpPath, { encoding: 'utf-8' });
+
+        writeFileSync(writePath, data);
       }
-      const writeDir = path.join(writePath, f);
-      if (!existsSync(writeDir)) {
-        mkdirSync(writeDir);
+
+      if (!existsSync(writePath)) {
+        mkdirSync(writePath);
       }
     }
     loading = false;
+    console.log('All Done!');
   }
 }
 
