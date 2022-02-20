@@ -1,6 +1,6 @@
 {
   "name": "@fardean/first-npm-publish",
-  "version": "0.0.2-beta",
+  "version": "0.0.2-eta",
   "description": "node typescript starter",
   "source": "index.ts",
   "main": "dist/main.js",
