@@ -3,5 +3,7 @@
 ## Usage
 
 > npx @fardean/first-npm-publish@latest
+
 > then:
+
 > npm i
