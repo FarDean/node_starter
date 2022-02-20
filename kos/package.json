@@ -5,7 +5,6 @@
   "source": "index.ts",
   "main": "dist/main.js",
   "types": "dist/types.d.ts",
-  "bin": "./dist/main.js",
   "scripts": {
     "start": "webpack serve --open",
     "dev:ts": "ts-node-dev --respawn --transpile-only index.ts",
