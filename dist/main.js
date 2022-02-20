@@ -55,7 +55,4 @@ async function main() {
   }
 }
 
-main();
-// Add error handling
-// dry up the code
-// .gitignore wasn't created
+main().catch(err => console.log(err));
